@@ -13,3 +13,8 @@ let getJohnProfile = () => {
 };
 
 // Start coding here
+getJohnProfile().then(function(data){
+  console.log(data);
+}).catch(function(error) {
+  console.error('Error fetching John\'s profile:', error);
+});
